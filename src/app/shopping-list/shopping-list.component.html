@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Azure Stack HCI</h1>
+    <ul>
+        <li *ngFor="let item of shopping_list">
+            {{item}}
+        </li>
+    </ul>
+    <input [(ngModel)]="newItem" name="item" pInputText placeholder="Please enter an item">
+    <button pButton label="Add" class="p-button-success" (click)="addNewItem()"></button>
+</div>
+<p-toast></p-toast>
